@@ -1,0 +1,59 @@
+/* Estilos para el contenedor del menú desplegable */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Estilos para el enlace que actúa como el botón de desplegable */
+.nav-link.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-bottom: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000; /* Ajustar según sea necesario */
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #FF5BAE;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+/* Estilos para los elementos del menú desplegable */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+/* Estilos para los elementos del menú desplegable cuando están activos o en foco */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #1e90ff;
+  text-decoration: none;
+  background-color: #FF5BAE;
+}
